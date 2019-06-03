@@ -12,4 +12,6 @@
 
 ## 5. 启动虚拟环境 source env/bin/active 
 
-## 6. 
+## 6. 安装django--->pip install django==1.11.8
+
+## 7. 创建一个django项目---> django-admin startproject My_blog
