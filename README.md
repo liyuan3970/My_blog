@@ -36,3 +36,5 @@ django-admin startproject My_blog
 python manage.py startapp blog<br>
 python manage.py startapp config<br>
 python manage.py startapp comment<br>
+
+# Day02~04
