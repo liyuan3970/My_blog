@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import *
 from django.urls import reverse
 from django.utils.html import format_html
-
+from .adminforms import PostAdminForm
 
 # admin.site.register(Category)
 # admin.site.register(Post)
@@ -59,6 +59,7 @@ class CategoryOwnerFilter(admin.SimpleListFilter):
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
+    form = PostAdminForm
     list_display = [
         'title', 'category', 'status', 'created_time', 'operator', 'owner'
     ]
